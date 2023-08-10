@@ -1,6 +1,10 @@
 #include<stdio.h>
 
-/* main */
+/**
+ * main - Entry void
+ * Description: using puts
+ * Return: Always postive (0)
+*/
 
 int main(void)
 {
