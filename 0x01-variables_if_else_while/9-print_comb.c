@@ -7,14 +7,12 @@
 int main(void)
 {
 	int x = 0;
-	int y = 0;
-	
-	while (x <= 9 && y <= 9)
+
+	while (x <= 9)
 	{
 		putchar(x + '0');
-		putchar(y + '0');
+		putchar(", ");
 		x++;
-		y++;
 	}
 	putchar('\n');
 	return (0);
