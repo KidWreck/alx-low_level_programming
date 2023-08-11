@@ -10,8 +10,12 @@ int main(void)
 
 	while (x <= 9)
 	{
-		putchar(x + '0');
-		putchar(", ");
+		putchar(x + 48);
+		if (x != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		x++;
 	}
 	putchar('\n');
