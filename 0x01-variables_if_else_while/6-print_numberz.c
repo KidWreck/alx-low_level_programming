@@ -4,7 +4,7 @@
  *   * Description: using puts
  *    * Return: Always postive (0)
 */
-int mqin(void)
+int main(void)
 {
 	int x = 0;
 
