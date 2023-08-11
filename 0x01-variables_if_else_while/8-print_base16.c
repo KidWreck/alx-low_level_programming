@@ -15,7 +15,6 @@ int main(void)
 			x = x + 39;
 		x++;
 	}
-	while (x
 	putchar('\n');
 	return (0);
 }
