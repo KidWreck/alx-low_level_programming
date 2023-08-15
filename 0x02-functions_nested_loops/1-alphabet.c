@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet
+ * print_alphabet - print all alphabet in lower * case
+ * return _putchar
 */
 
 void print_alphabet(void)
