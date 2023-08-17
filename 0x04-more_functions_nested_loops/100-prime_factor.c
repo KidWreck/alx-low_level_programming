@@ -8,23 +8,14 @@
 
 int main(void)
 {
-	long int x, max = -1, n = 612852475143;
-
-	while (n % 2 == 0)
+	long int x, max, n = 612852475143;
+	double sq = sqrt(n);
+	
+	for (x = 2; x <= sq; x++)
 	{
-		max = 2;
-		n = n / 2;
+		if (n % x == 0)
+			max = n / x;
 	}
-	for (x = 3; x <= sqrt(n); x = x + 2)
-	{
-		while (n % x == 0)
-		{
-			max = x;
-			n = n / 2;
-		}
-	}
-	if (n > 2)
-		max = n;
 	printf("%lu\n", max);
 
 	return (0);
