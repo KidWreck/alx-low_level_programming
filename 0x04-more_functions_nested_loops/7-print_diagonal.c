@@ -3,7 +3,6 @@
 /**
  * print_diagonal - print '\'
  * @n: number of '\'
- * Return: always 0
  */
 
 void print_diagonal(int n)
