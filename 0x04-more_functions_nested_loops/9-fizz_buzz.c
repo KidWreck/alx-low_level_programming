@@ -13,9 +13,9 @@ int main(void)
 	{
 		if (x % 3 == 0 && x % 5 != 0)
 			printf("Fizz ");
-		if (x % 5 == 0 && x % 3 != 0)
+		else if (x % 5 == 0 && x % 3 != 0)
 			printf("Buzz ");
-		if (x % 3 == 0 && x % 5 == 0)
+		else if (x % 3 == 0 && x % 5 == 0)
 			printf("FizzBuzz ");
 		else
 			printf("%d ", x);
