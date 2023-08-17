@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
- * print_diagonal - print '\'
- * @n: number of '\'
- */
-
+ * print_diagonal - print \
+ * @n: number of \
+*/
 void print_diagonal(int n)
 {
 	int x, y;
@@ -13,12 +11,12 @@ void print_diagonal(int n)
 		_putchar('\n');
 	else
 	{
-	for (x = 1 ; x <= n ; x++)
-	{
-		for (y = 1 ; y <= x ; y++)
-			_putchar(' ');
-	_putchar(92);
-	_putchar('\n');
-	}
+		for (x = 1 ; x <= n ; x++)
+		{
+			for (y = 1 ; y <= x ; y++)
+				_putchar(' ');
+			_puttchar('/');
+			_putchar('\n');
+		}
 	}
 }
