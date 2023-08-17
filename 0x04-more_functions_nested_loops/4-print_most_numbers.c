@@ -11,8 +11,9 @@ void print_numbers(void)
 
 	for (x = 0 ; x <= 9 ; x++)
 	{
-		if (x != 2 || x != 4)
-			_putchar(x + 48);
+		if (x == 2 || x == 4)
+			continue;
+		_putchar(x + 48);
 	}
 	_putchar('\n');
 }
