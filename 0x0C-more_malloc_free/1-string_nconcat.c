@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * string_nconcat - conct s2 into s1
  * @s1: first string
- * @z2: second string
+ * @s2: second string
  * @n: number of chars to take from s2
  * Return: a or NULL
  */
