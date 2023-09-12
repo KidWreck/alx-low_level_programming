@@ -7,8 +7,8 @@
  * Return: len
  */
 int _strlen(const char *str)
-{
-	len = 0;
+{	
+	int len = 0;
 
 	while (*str++)
 		len++;
@@ -21,11 +21,11 @@ int _strlen(const char *str)
  * @dest: to
  * Return: dest
  */
-int _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0 ; src[i] != '\0' ; i++)
+	for (i = 0 ; src[i] ; i++)
 		dest[i] = src[i];
 	dest[i] = '\0';
 	return (dest);
@@ -56,10 +56,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if ((*dog).owmer == NULL)
+	if ((*dog).owner == NULL)
 	{
 		free(dog->name);
-		free dog;
+		free(dog);
 
 		return (NULL);
 	}
