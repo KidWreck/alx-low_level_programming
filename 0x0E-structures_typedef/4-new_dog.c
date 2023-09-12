@@ -7,7 +7,7 @@
  * Return: len
  */
 int _strlen(const char *str)
-{	
+{
 	int len = 0;
 
 	while (*str++)
