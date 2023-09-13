@@ -5,7 +5,7 @@
  * main - print main opcodes
  * @argc: number of args
  * @argv: array of args
- * Return: 1 or 2 if Error, else if else
+ * Return: 1 or 2 if Error, 0 if else
  */
 int main(int argc, char *argv[])
 {
@@ -21,4 +21,5 @@ int main(int argc, char *argv[])
 
 	while (x--)
 		printf("%02hhx%s", *p++, x ? " " : "\n");
+	return (0);
 }
