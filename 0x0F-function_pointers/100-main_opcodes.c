@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	x = atoi(argv[1]);
 	if (x < 0)
-		printf("Errot\n"), exit(2);
+		printf("Error\n"), exit(2);
 
 	while (x--)
 		printf("%02hhx%s", *p++, x ? " " : "\n");
