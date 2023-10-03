@@ -19,7 +19,7 @@ int main(int ac, char **av)
 	char buf[1024];
 
 	if (ac != 3)
-		dprintf(STDERR_FILENO, USAGE), exit(97);
+		exit(97);
 	f_fd = open(av[1], O_RDONLY);
 	if (f_fd == -1)
 		dprintf(STDERR_FILENO, noR, av[1]), exit(98);
